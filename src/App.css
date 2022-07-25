@@ -1,3 +1,151 @@
-.App {
+:root{
+  --bg-primary:#f1b101;
+  --border-primary:#347873;
+  --border-secondary:#22be63;
+  --text-primary:#000000;
+}
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 14px;
+}
+body{
+  margin: 0 ;
+  padding: .6rem;
+}
+h1,h2,h3{
+  margin:0;
+}
+/*-- home --*/
+
+.home-cont{
+  border: 1px solid red;
+  width: 70%;
+  height: 500px;
+  margin: 0 auto;
+  background-color: var(--border-secondary);
   text-align: center;
+  font-size: 1.5rem;
+}
+.home-cont h1{
+  margin: 2rem 0;
+}
+.home-cont input{
+  font-size: 1.4rem;
+}
+.home-cont button{
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+/*-- pokedex List --*/
+.pokedex-cont {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.form-cont{
+  margin: 0.5em auto ;
+}
+.form-cont input, .form-cont button{
+  font-size: 1.3rem;
+  text-align: center;
+}
+.form-cont button:focus{
+  outline: 3px solid var(--border-primary);
+}
+.select-cont{
+  margin:0.5em auto;
+  font-size: 1.1rem;
+}
+.pages-cont{
+  margin:.5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  justify-content: center;
+}
+.pages-cont button{
+  width: 30px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--bg-primary);
+  cursor: pointer;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+/*-- list cards --*/
+.cards-list-cont{
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+.card-cont{
+  border: 1px solid var(--border-primary);
+  border-radius: .3rem;
+  padding: 1rem;
+}
+.card-cont img{
+  width: 100%;
+}
+/*-- details page --*/
+.details-cont{
+  text-align: center;
+}
+.details-cont h2{
+  text-transform: uppercase;
+  margin: .2em 0 0.1em 0;
+}
+.details-cont img{
+  width: 100%;
+}
+.details-cont > div {
+  border: 1px solid var(--border-primary);
+  padding: .7em;
+  border-radius: .3em;
+  margin-top: .5em; 
+}
+.movements-cont{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem .4rem;
+}
+.movements-cont h2{
+  width: 100%;
+  padding-bottom: .5em;
+}
+.movements-cont div{
+  border: 1px solid var(--border-secondary);
+  padding: 0.3em .7em;
+  border-radius: .3em;
+}
+/*--media query--*/
+@media (min-width:370px){
+  .cards-list-cont{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card-cont{
+    width: 310px;
+  }
+}
+@media (min-width:600px) {
+  .basic-details-cont{
+    width: 100%;
+    aspect-ratio: 10/5;
+  }
+  .basic-details-cont img{
+    height: 100%;
+    width: fit-content;
+  }
+}
+@media (min-width:1090px) {
+  .details-cont{
+    width: 1000px;
+    margin: 0 auto;
+  }
+  
 }

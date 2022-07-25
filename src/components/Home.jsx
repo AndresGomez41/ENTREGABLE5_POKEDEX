@@ -18,7 +18,7 @@ const Home = () => {
 
   
   return (
-    <div>
+    <div className="home-cont">
       <h1>Hello trainer!</h1>
       <form onSubmit={submit}>
         <input

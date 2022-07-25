@@ -7,10 +7,10 @@ const Pokedex = () => {
     const user = useSelector(state => state.user)
 
     return (
-        <div>
-            <h2>Pokedex</h2>
+        <div className='pokedex-cont'>
+            <h1>Pokedex</h1>
             <p>
-                Welcome {user}, here you can find your favorite pokemon
+                Welcome <b>{user}</b>, here you can find your favorite pokemon
             </p>
             <PokemonList/>
 

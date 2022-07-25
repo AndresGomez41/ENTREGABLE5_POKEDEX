@@ -19,7 +19,7 @@ const PokemonCard = ({url}) => {
     //console.log(pokemon)
     
     return (
-        <div onClick={()=>navigate(`/pokedex/${pokemon.id}`)}>
+        <div className='card-cont' onClick={()=>navigate(`/pokedex/${pokemon.id}`)}>
             <h2>{pokemon?.name}</h2>
             <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
             {pokemon?.types.map(type =>
